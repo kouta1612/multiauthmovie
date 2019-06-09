@@ -8,13 +8,8 @@
                 <div class="card-header">USER Dashboard</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in as USER!
+                    @component('components.who')
+                    @endcomponent
                 </div>
             </div>
         </div>
